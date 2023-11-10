@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task_4.HelloController">
+   <VBox alignment="TOP_CENTER" layoutY="71.0" prefHeight="408.0" prefWidth="180.0" spacing="20.0">
+      <Label prefHeight="30.0" prefWidth="90.0" text="Queue 1">
+         <font>
+            <Font name="BM HANNA 11yrs old OTF" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="C1P1" alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="170.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="C1P2" alignment="CENTER" contentDisplay="TOP" prefHeight="23.0" prefWidth="170.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+   </VBox>
+   <VBox alignment="TOP_CENTER" layoutX="180.0" layoutY="71.0" prefHeight="408.0" prefWidth="180.0" spacing="20.0">
+      <Label text="Queue 2">
+         <font>
+            <Font name="BM HANNA 11yrs old OTF" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="C2P1" alignment="CENTER" prefHeight="23.0" prefWidth="168.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="C2P2" alignment="CENTER" prefHeight="23.0" prefWidth="164.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="C2P3" alignment="CENTER" prefHeight="23.0" prefWidth="170.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+   </VBox>
+   <VBox alignment="TOP_CENTER" layoutX="550.0" layoutY="72.0" prefHeight="352.0" prefWidth="153.0" spacing="10.0">
+      <Label text="Waiting Queue">
+         <font>
+            <Font name="BM HANNA 11yrs old OTF" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC1" alignment="CENTER" prefHeight="19.0" prefWidth="149.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC2" alignment="CENTER" prefHeight="19.0" prefWidth="148.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC3" alignment="CENTER" prefHeight="19.0" prefWidth="148.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC4" alignment="CENTER" prefHeight="19.0" prefWidth="148.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC5" alignment="CENTER" prefHeight="19.0" prefWidth="146.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC6" alignment="CENTER" prefHeight="19.0" prefWidth="148.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC7" alignment="CENTER" prefHeight="19.0" prefWidth="145.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC8" alignment="CENTER" prefHeight="19.0" prefWidth="145.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC9" alignment="CENTER" prefHeight="19.0" prefWidth="144.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="WC10" alignment="CENTER" prefHeight="19.0" prefWidth="143.0">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Label>
+   </VBox>
+   <VBox alignment="TOP_CENTER" layoutX="734.0" layoutY="72.0" prefHeight="352.0" prefWidth="166.0" spacing="20.0">
+      <TextField fx:id="txtSearchBar" prefHeight="27.0" prefWidth="156.0" promptText="Search Here.">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Button fx:id="searchCustomer" mnemonicParsing="false" onAction="#searchCustomer" text="Search Customer">
+         <font>
+            <Font name="BM HANNA 11yrs old OTF" size="16.0" />
+         </font>
+      </Button>
+      <Text fx:id="displayName" stroke="RED" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="161.21630859375">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Text>
+   </VBox>
+   <Label alignment="TOP_CENTER" layoutX="139.0" layoutY="8.0" prefHeight="54.0" prefWidth="643.0" text="Foodie Fave queue management system" textAlignment="CENTER">
+      <font>
+         <Font name="BM HANNA 11yrs old OTF" size="33.0" />
+      </font>
+      <textFill>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="1.0" green="0.1388888955116272" blue="0.1388888955116272" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.3815789520740509" green="0.1589912325143814" blue="0.1589912325143814" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill>
+   </Label>
+   <Button fx:id="viewWaiting" layoutX="553.0" layoutY="527.0" mnemonicParsing="false" onAction="#viewingWaitingQueues" text="View Waiting Queue">
+      <font>
+         <Font name="BM HANNA 11yrs old OTF" size="16.0" />
+      </font>
+   </Button>
+   <Button fx:id="viewQueue" layoutX="207.0" layoutY="524.0" mnemonicParsing="false" onAction="#viewingQueues" text="view Queues">
+      <font>
+         <Font name="BM HANNA 11yrs old OTF" size="19.0" />
+      </font>
+   </Button>
+   <VBox alignment="TOP_CENTER" layoutX="364.0" layoutY="72.0" prefHeight="352.0" prefWidth="180.0" spacing="20.0">
+      <Label text="Queue 3">
+         <font>
+            <Font name="BM HANNA 11yrs old OTF" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="C3P1" alignment="CENTER" prefHeight="23.0" prefWidth="172.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="C3P2" alignment="CENTER" prefHeight="23.0" prefWidth="172.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="C3P3" alignment="CENTER" prefHeight="23.0" prefWidth="171.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="C3P4" alignment="CENTER" prefHeight="23.0" prefWidth="166.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="C3P5" alignment="CENTER" prefHeight="23.0" prefWidth="167.0">
+         <font>
+            <Font name="Avenir Next Bold" size="15.0" />
+         </font>
+      </Label>
+   </VBox>
+   <Line endX="-100.0" endY="354.0" layoutX="284.0" layoutY="80.0" startX="-100.0" startY="-9.0" />
+   <Line endX="-100.0" endY="354.0" layoutX="464.0" layoutY="80.0" startX="-100.0" startY="-9.0" />
+   <Line endX="-100.0" endY="354.0" layoutX="644.0" layoutY="80.0" startX="-100.0" startY="-9.0" />
+   <Line endX="-100.0" endY="354.0" layoutX="821.0" layoutY="80.0" startX="-100.0" startY="-9.0" />
+</AnchorPane>
